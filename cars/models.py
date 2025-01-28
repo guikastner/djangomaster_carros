@@ -14,6 +14,8 @@ class Car(models.Model):
     factory_year = models.IntegerField(blank=True,null=True)
     model_year = models.IntegerField(blank=True,null=True)
     value = models.FloatField(blank=True,null=True)
+    plate = models.CharField(max_length=10, blank=True, null=True)
+    photo = models.ImageField(upload_to='cars/', blank=True, null=True)
     timestamp = models.DateTimeField(auto_now_add=True)
 
     def __str__(self): # Generate a string representation of the model
