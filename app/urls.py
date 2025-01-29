@@ -4,10 +4,9 @@ import os
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-from django.http import HttpResponse
+from cars.views import carview
 
-def carview(request):
-    return HttpResponse('Meus carros')
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
