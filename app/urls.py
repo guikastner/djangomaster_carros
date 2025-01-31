@@ -15,4 +15,4 @@ urlpatterns = [
     path('logout/', logout_view, name='logout'),
     path('cars/', carsview.as_view(), name='cars_list'),
     path('new_car', new_car_view, name='new_car'),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) ###test
